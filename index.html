@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Форма логіна</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 400px;
+      margin: 2rem auto;
+      background: #f0f0f0;
+      padding: 2rem;
+      border-radius: 8px;
+    }
+    input {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+    button {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      margin-right: 1rem;
+    }
+    #message {
+      margin-top: 1rem;
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <h2>Увійти</h2>
+  <form id="loginForm">
+    <input type="email" id="email" placeholder="Email" required>
+    <div style="position: relative;">
+      <input type="password" id="password" placeholder="Пароль" required minlength="6">
+      <button type="button" id="togglePassword" style="position: absolute; right: 0; top: 0;">👁</button>
+    </div>
+    <button type="submit">Увійти</button>
+    <button type="button" id="clearStorage">Очистити email</button>
+  </form>
+  <div id="message"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
